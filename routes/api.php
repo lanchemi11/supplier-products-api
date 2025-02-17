@@ -33,3 +33,5 @@ Route::prefix('products')->group(function () {
     Route::delete('/{product}', [ProductController::class, 'destroy']);
 });
 
+// BONUS
+Route::get('/suppliers/{supplier}/export', [ProductController::class, 'exportBySupplier']);
